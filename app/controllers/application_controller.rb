@@ -16,12 +16,11 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/posts/:id' do
-
     erb :show
   end
 
   post '/posts' do
-
+    Post.create(params)
   end
 
   get '/posts' do
