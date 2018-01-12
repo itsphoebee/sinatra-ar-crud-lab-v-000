@@ -15,7 +15,12 @@ class ApplicationController < Sinatra::Base
     erb :new
   end
 
+  get '/posts/[:id]' do
+    
+  end
+
   get '/posts' do
     erb :index
   end
+  
 end
