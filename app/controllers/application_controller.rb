@@ -21,8 +21,6 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/posts' do
-    binding.pry
-    @post = Post.new(params)
     erb :index
   end
 
