@@ -18,6 +18,7 @@ class ApplicationController < Sinatra::Base
   get '/posts/:id' do
     @post = Post.find(:id)
     erb :show
+    binding.pry
   end
 
   post '/posts' do
